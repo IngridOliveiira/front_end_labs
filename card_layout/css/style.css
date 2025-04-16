@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #eaf2ff;
+    --card-bg: #ffffff;
+    --primary-color: #68026b;
+    --primary-hover: #1a4ecc;
+    --accent-color: #68026b;
+    --text-color: #222;
+    --subtext-color: #666;
+    --icon-color: #333;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* sombra mais leve */
+    --radius: 12px;
+    --transition: 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 40px 25px; /* aumentado */
+    width: 320px;       /* aumentado */
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .card var {
+    display: block;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-style: normal;
+  }
+  
+  .card var small {
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+    font-weight: 300;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .card li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: var(--icon-color);
+    font-weight: 400;
+  }
+  
+  .card li p {
+    margin: 0;
+  }
+  
+  .card i {
+    color: var(--primary-color);
+  }
+  
+  .card button {
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition), transform var(--transition);
+  }
+  
+  .card button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Destaque do plano do meio */
+  .card:nth-of-type(2) {
+    border: 2px solid var(--accent-color);
+  }
+  
