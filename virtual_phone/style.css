@@ -60,6 +60,11 @@ input[type=tel]{
     margin-bottom: 25px;
     padding: 10px;
     text-align: center;
-    width: 20px;
+    width: 230px;
 }
 
+.icon{
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 10px;
+}
