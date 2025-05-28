@@ -14,7 +14,12 @@ limpar.onclick = () => {
 //tarefinha: criar uma condição para travar
 //mais de 12 digitos
 function valorTeclaToDisplay (i) {
+  if(display.value.length <= 14){
     display.value += teclas[i].value;
+  }else {
+    alert("Número máximo de digitos atingidos");
+  }
+   
 }
 
 
