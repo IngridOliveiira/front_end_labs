@@ -17,7 +17,7 @@ function valorTeclaToDisplay (i) {
   if(display.value.length <= 14){
     display.value += teclas[i].value;
   }else {
-    alert("Número máximo de digitos atingidos");
+    alert("Número máximo de digitos atingi")
   }
    
 }
